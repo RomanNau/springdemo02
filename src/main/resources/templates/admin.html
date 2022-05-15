@@ -12,9 +12,8 @@
             <li sec:authorize="hasRole('ADMIN')"><a href="/admin">Администратор</a></li>
             <li sec:authorize="isAnonymous()"><a href="/login">Войти</a></li>
             <li sec:authorize="isAuthenticated()"><a href="/logout">Выйти</a></li>
-
-            <h1>Главная страница</h1>
-
+        </ul>
+        <h1>Страница доступная только пользователям с ролью АДМИНИСТРАТОР</h1>
 
         </body>
 </html>

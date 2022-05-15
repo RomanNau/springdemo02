@@ -16,4 +16,12 @@ public class AppController {
     public String au() {
         return  "authenticated";
     }
+    @GetMapping("/client")
+    public String client(){
+        return "client";
+    }
+    @GetMapping("/admin")
+    public String admin(){
+        return "admin";
+    }
 }
